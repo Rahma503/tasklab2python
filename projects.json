@@ -6,13 +6,5 @@
         "start_date": "2020-12-02",
         "end_date": "2025-01-01",
         "owner": "r@gmail.com"
-    },
-    {
-        "title": "dd",
-        "details": "any thing",
-        "total_target": 888.0,
-        "start_date": "2020-01-01",
-        "end_date": "2040-01-01",
-        "owner": "n@gmail.com"
     }
 ]
