@@ -48,7 +48,6 @@ def main():
                                     projects.edit_project(user_email)
                                 case "6":
                                     login.logout(user_email)
-                                    print("🔴 Logging out...")
                                     break
                                 case _ :
                                     print("invalid choice ")

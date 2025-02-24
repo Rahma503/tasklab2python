@@ -2,7 +2,7 @@ import json
 import re 
 import os
 import getpass
-
+import projects
 
 USER_FILE="users.json"
 
@@ -85,10 +85,14 @@ def login():
 
 
 
-
-
 def logout(user_email):
+   
     users = load_users()
     users = [user for user in users if user["email"] != user_email]
     save_user(users)
-    print("🔴 Logged out and account deleted successfully!")
+
+    allprojects = projects.load_projects()
+    ownprojects = [project for project in allprojects if project["owner"] != user_email]
+    projects.save_projects(ownprojects) 
+
+    print("🔴 Logged out, account and projects deleted successfully!")
